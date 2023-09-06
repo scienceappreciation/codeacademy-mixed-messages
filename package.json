@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/scienceappreciation/codeacademy-mixed-messages/issues"
   },
-  "homepage": "https://github.com/scienceappreciation/codeacademy-mixed-messages#readme"
+  "homepage": "https://github.com/scienceappreciation/codeacademy-mixed-messages#readme",
+  "dependencies": {
+    "inquirer": "^9.2.10"
+  }
 }

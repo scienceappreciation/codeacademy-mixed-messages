@@ -23,6 +23,7 @@ Shakespeare's Mixed Messages is a CLI quote generator that allows you to request
 ## Technologies
 - NodeJS
 - JavaScript
+- [Inquirer] (https://github.com/SBoudrias/Inquirer.js)
 
 ## Credits
 - The Team at CodeAcademy for lending me a hand.
