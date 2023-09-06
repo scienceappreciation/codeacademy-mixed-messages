@@ -1,0 +1,23 @@
+{
+  "name": "mixed-messages",
+  "version": "1.0.0",
+  "description": "A project for CodeAcademy written in JavaScript. ## What is Shakespeare's Mixed Messages? Shakespeare's Mixed Messages is a CLI quote generator that allows you to request a random Shakespeare quote from a set database included within the project itself.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scienceappreciation/codeacademy-mixed-messages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scienceappreciation/codeacademy-mixed-messages/issues"
+  },
+  "homepage": "https://github.com/scienceappreciation/codeacademy-mixed-messages#readme",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  }
+}
