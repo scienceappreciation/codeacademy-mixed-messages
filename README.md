@@ -19,3 +19,7 @@ Shakespeare's Mixed Messages is a CLI quote generator that allows you to request
 1. Begin in the terminal in your installation folder. Refer to installation instructions above.
 2. Run the app with the following command: ```node app.js```
 3. Type `quote` to recieve a quote, or `exit` to back out of the program.
+
+## Technologies
+- NodeJS
+- JavaScript
