@@ -16,8 +16,12 @@
   "bugs": {
     "url": "https://github.com/scienceappreciation/codeacademy-mixed-messages/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/scienceappreciation/codeacademy-mixed-messages#readme",
   "dependencies": {
     "inquirer": "^9.2.10"
   }
+=======
+  "homepage": "https://github.com/scienceappreciation/codeacademy-mixed-messages#readme"
+>>>>>>> 093b435 (Initial Setup)
 }
