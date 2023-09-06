@@ -1,7 +1,9 @@
+/* Libraries */
+const { default: inquirer } = require('inquirer');
 const Inquirer = require('inquirer')
 
+/* Constants */
 const QuoteAuthor = "- William Shakespeare";
-
 const QUOTES = [
     quoteFactory("The fool doth think he is wise, but the wise man knows himself to be a fool.", "As You Like It."),
     quoteFactory("Be not afraid of greatness. Some are born great, some achieve greatness, and others have greatness thrust upon them.", "Twelfth Night"),
@@ -13,6 +15,7 @@ const QUOTES = [
     quoteFactory("Though she be but little, she is fierce!", "A Midsummer Night's Dream")
 ]
 
+/* Data Construction */
 function quoteFactory(text, origin="") {
     return {
         _text: text,
@@ -30,6 +33,7 @@ function quoteFactory(text, origin="") {
      }
 }
 
+/* Functions */
 function getRandomQuote(arr) {
     const selector = Math.floor(Math.random() * arr.length);
     const quote = arr[selector];
@@ -43,4 +47,26 @@ function printRandomQuote() {
     console.log(getRandomQuote(QUOTES));
 }
 
-printRandomQuote();
+/* Menu */
+const options = [
+    {
+        type: "list",
+        name: "quote",
+        message: `${QuoteAuthor} Quote Generator`,
+        choices: ["Generate a Quote", "Exit"]
+    }
+];
+
+function displayRandomQuote(callback) {
+    printRandomQuote();
+    callback();
+}
+
+function promptUser() {
+    Inquirer.prompt(options).then(answers => {
+        if (answers.quote == "Generate a Quote") displayRandomQuote(promptUser);
+        else if (answers.quote == "Exit") return;
+    })
+}
+
+promptUser();
